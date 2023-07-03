@@ -29,7 +29,7 @@ gulp.task("browser-sync", function (done) {
     //    browser: 'chrome',
     host: 'localhost',
     port: 5000,
-    open: true,
+    open: false,
     tunnel: true
   });
   gulp.watch(["./**/*.html"]).on("change", reload);

@@ -25,8 +25,8 @@ gulp.task("browser-sync", function (done) {
     server: {
       baseDir: 'docs/',
     },
-    // startPath: "src/index.html", 
-    //    browser: 'chrome',
+  startPath: "docs/index.html", 
+       browser: 'chrome',
     host: 'localhost',
     port: 5000,
     open: false,

@@ -139,7 +139,7 @@ gulp.task("htmlComponents", () => {
 //   );
 // });
 
-gulp.task("default", gulp.series("css", "webfonts", "webpImage", "htmlInc", "htmlComponents", "browser-sync", "svgImage", () => {
+gulp.task("build", gulp.series("css", "webfonts", "webpImage", "htmlInc", "htmlComponents", "browser-sync", "svgImage", () => {
   livereload.listen();
   gulp.watch(["assests/scss/**/*"], gulp.series("css"));
   //   gulp.watch(["assests/js/**/*"], gulp.series("js"));

@@ -27,10 +27,10 @@ gulp.task("browser-sync", function (done) {
     },
   startPath: "docs/index.html", 
        browser: 'chrome',
-    host: 'localhost',
-    port: 5000,
+    // host: 'localhost',
+    // port: 5000,
     open: false,
-    tunnel: true
+    tunnel: false
   });
   gulp.watch(["./**/*.html"]).on("change", reload);
   done();
